@@ -1,8 +1,9 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Link from 'next/link'
+import Head from "next/head"
+import styles from "../styles/Home.module.css"
+import Link from "next/link"
+import Image from "next/image"
 
- const Home = () => {
+const Home = () => {
   return (
     <div className={styles.container}>
       <Head>
@@ -11,14 +12,18 @@ import Link from 'next/link'
       </Head>
 
       <main>
+        {/* <Image
+          src="/images/profile.jpg" 
+          height={144}
+          width={144}
+          alt="Your Name"
+        /> */}
         <h1 className={styles.title}>
           Read <Link href="/posts/first-post">Next.js!</Link>
         </h1>
-
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
         </p>
-
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
@@ -56,7 +61,7 @@ import Link from 'next/link'
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
@@ -114,6 +119,5 @@ import Link from 'next/link'
     </div>
   )
 }
-
 
 export default Home
